@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Objects</title>
+     
+    <style>
+        .objStyle{
+            background-color: pink;
+            padding: 1rem 2rem;
+            border: 2px solid;
+        }
+    </style>
+
+</head>
+<body>
+
+     <h1>In this tutorial we will learn about JS Objects</h1>
+     <p id="demo"></p>
+     <button onclick="displayObjects()">Click</button>
+
+     <script>
+
+        function displayObjects(){
+
+           var jsObj = {
+            name : "Rayhan",
+            address : "Riyadh",
+            grade : "7th"
+           }
+
+           document.getElementById("demo").innerHTML = "Name : "+ jsObj.name + " Address : "+ jsObj.address + "Grade :  " + jsObj.grade; 
+
+           document.getElementById("demo").classList.add("objStyle")
+
+        }
+
+
+     </script>
+    
+</body>
+</html>
