@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguments Object in JS Function</title>
+</head>
+<body>
+
+       <h1> What is the Biggest among  11, 87, 5</h1>
+       <p id="demo"></p>
+       <button onclick="findMax(11, 87 ,5)">Find Max</button>
+
+       <script>
+         
+          function findMax(){
+            var max = 0;
+
+            if( arguments[0] > arguments[1]){
+                if(arguments[0] > arguments[2]){
+                    max = arguments[0]
+                }
+                else{
+                    max = arguments[2]
+                }
+            }
+            else{
+                if(arguments[1] > arguments[2]){
+                    max = arguments[1]
+                }
+                else{
+                    max = arguments[2]
+                }
+            }
+
+            document.getElementById("demo").innerHTML = "Max : "+max;
+          } 
+
+       </script>
+
+    
+</body>
+</html>
